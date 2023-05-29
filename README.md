@@ -70,7 +70,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Project Objectives
 
 * Bullet point
 * Other bullet point
