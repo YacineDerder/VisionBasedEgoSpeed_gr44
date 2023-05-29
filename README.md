@@ -124,7 +124,7 @@ Both preprocessed datasets can be directly downloaded [here](https://drive.googl
 <!-- EXPERIMENTAL SETUP -->
 ## Experimental Setup
 
-In order to evaluate our network, we have used the RMSE error on the whole test datasets, as in the reference paper : $RMSE = \sum_{i=1}^{n} \frac{(\hat{y}_i - y_i)^2}{n}$
+In order to evaluate our network, we have used the RMSE error on the whole test datasets, as in the reference paper : $RMSE = \sum_{i=1}^n \frac{(\hat{y}_i - y_i)^2}{n}$
 
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
