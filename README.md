@@ -47,9 +47,18 @@
   <ol>
     <li>
       <a href="#project-objectives">Project Objectives</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+    </li>
+    <li>
+      <a href="#experimental-setup">Experimental Setup</a>
+    </li>
+    <li>
+      <a href="#dataset">Dataset</a>
+    </li>
+    <li>
+      <a href="#results">Results</a>
+    </li>
+    <li>
+      <a href="#conclusion">Conclusion</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -69,7 +78,7 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
+<!-- PROJECT OBJECTIVES -->
 ## Project Objectives
 
 * Bullet point
@@ -81,7 +90,53 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- EXPERIMENTAL SETUP -->
+## Experimental Setup
 
+* Bullet point
+* Other bullet point
+
+<img src="Figures\Network.png" alt="Network">
+
+`hello_world.py`
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- DATASET -->
+## Dataset
+
+* Bullet point
+* Other bullet point
+
+<img src="Figures\Network.png" alt="Network">
+
+`hello_world.py`
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- RESULTS -->
+## Results
+
+* Bullet point
+* Other bullet point
+
+<img src="Figures\Network.png" alt="Network">
+
+`hello_world.py`
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONCLUSION -->
+## Conclusion
+
+* Bullet point
+* Other bullet point
+
+<img src="Figures\Network.png" alt="Network">
+
+`hello_world.py`
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
