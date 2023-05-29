@@ -143,6 +143,10 @@ As we can see we have much more satisfying results on the NuImage dataset, with 
 
 The RMSE loss computed on the whole test dataset is 1.02, which is actually slightly less than the one given in the paper. The `Evaluate_NN.py` script implements this computation if it is run with its `animate` flag set to `False`. Furthermore, this script provides a `evaluate()` function which takes an RGB clip of any size, as well as both networks required for a forward pass, and outputs the estimated velocity. For clips extracted from NuImage, the evaluation function takes ~0.4 seconds to run. Despite this, the network would not be able to perform in true real-time, as it requires frames from a time window in the past as well as in the futur to make a prediction.
 
+The following figure shows an example of results obtained running `Evaluate_NN.py`, where for each sample the evaluation time, estimated ego-speed, actual ego-speed and absolute error is computed and printed.
+
+<img src="Figures\Evaluation.png" alt="Evaluation">
+
 `EvaluateTestDrives.py` builds clips of the right format from the provided [test datasets](https://drive.google.com/drive/folders/16xf0AF9zgWAuK6Xyr5xK85t77hM3BwAv) and uses the `evaluate()` function on all of them before storing the results in the required `.json` format. The results can be found at the dedicated place on the [same drive](https://drive.google.com/drive/folders/1OgSYpEttJQSREDNMQVNPdaOmjBM9xMXC).
 
 NOTE : As the frequency was not provided for the test clips, it was assumed to be 30Hz.
