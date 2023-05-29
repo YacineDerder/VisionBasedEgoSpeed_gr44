@@ -34,8 +34,9 @@
   <h3 align="center">DLAV project 2023</h3>
 
   <p align="center">
-    20. Vision-based Vehicle Speed Estimation
-    Group 44 : Yacine Derder & David Junqueira
+    20. Vision-based Vehicle Speed Estimation.
+    <br />
+    Group 44 : Yacine Derder & David Junqueira.
   </p>
 </div>
 
