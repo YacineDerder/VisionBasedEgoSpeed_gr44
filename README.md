@@ -98,7 +98,6 @@ The following figure shows more details about the architecture to reproduce :
 <img src="Figures\NetworkDetail.png" alt="NetworkDetail">
 
 As we can see, the network consists of 6 convolutional layers, 2 maxPool layers and 3 dense layers. The kernel used for the convolutional layers is always (3,3,3), however, the first maxPool kernel does not span in depth in order to preserve temporal information. As a padding of 1 and a stride of 1 are used for the convolutions, the dimensions are preserved between convolution layers.
-The network is trained with a learning rate of 0.001, the ADAM optimizer and the MSE loss.
 
 With the final network trained and the preprocessed dataset completed, we obtain the following structure, as opposed to the first one :
 
@@ -124,9 +123,16 @@ Both preprocessed datasets can be directly downloaded [here](https://drive.googl
 <!-- EXPERIMENTAL SETUP -->
 ## Experimental Setup
 
-In order to evaluate our network, we have used the RMSE error on the whole test datasets, as in the reference paper : $$RMSE = \sum_{i=1}^n \frac{(\hat{y}_i - y_i)^2}{n}$$
+The training of the networks happens in the `Train_NN.py` script. As they were specified in the reference paper, we use the following parameters : 
 
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+* Learning rate = 0.001
+* ADAM optimized
+* MSE loss
+
+In order to evaluate our network after training, we have used the RMSE error on the whole test datasets, as in the reference paper : 
+$$RMSE = \sqrt{\sum_{i=1}^n \frac{(\hat{y}_i - y_i)^2}{n}}$$
+
+For both datasets, we use the predefined provided partition between train and test data.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
