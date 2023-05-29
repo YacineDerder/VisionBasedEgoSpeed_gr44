@@ -115,7 +115,7 @@ Both preprocessed datasets can be directly downloaded [here](https://drive.googl
 The training of the networks happens in the `Train_NN.py` script. As they were specified in the reference paper, we use the following parameters : 
 
 * Learning rate = 0.001
-* ADAM optimized
+* ADAM optimizer
 * MSE loss
 
 To use the file, the user must replace the `dataset_loc` variable defined at the begining of the file by their own path to the preprocessed dataset (downloadable on google drive). The user must then specify, when running the script, with 2 parameters whether to do the training and whether to save the result. As an example, in order to train the model but not save the results, one would run the script as such (on windows): `python Train_NN.py 1 0`. If we do decide to save the results, we will obtain 4 files in the same directory from which the script is ran :
@@ -143,7 +143,7 @@ As we can see we have much more satisfying results on the NuImage dataset, with 
 
 The RMSE loss computed on the whole test dataset is 1.02, which is actually slightly less than the one given in the paper. The `Evaluate_NN.py` script implements this computation if it is run with its `animate` flag set to `False`. Furthermore, this script provides a `evaluate()` function which takes an RGB clip of any size, as well as both networks required for a forward pass, and outputs the estimated velocity. For clips extracted from NuImage, the evaluation function takes ~0.4 seconds to run. Despite this, the network would not be able to perform in true real-time, as it requires frames from a time window in the past as well as in the futur to make a prediction.
 
-`EvaluateTestDrives.py` builds clips of the right format from the provided [test datasets](https://drive.google.com/drive/folders/16xf0AF9zgWAuK6Xyr5xK85t77hM3BwAv) and uses the `evaluate()` function on all of them before storing the results in the required `.json` format. The results can be found at the dedicated place on the same [drive](https://drive.google.com/drive/folders/1OgSYpEttJQSREDNMQVNPdaOmjBM9xMXC).
+`EvaluateTestDrives.py` builds clips of the right format from the provided [test datasets](https://drive.google.com/drive/folders/16xf0AF9zgWAuK6Xyr5xK85t77hM3BwAv) and uses the `evaluate()` function on all of them before storing the results in the required `.json` format. The results can be found at the dedicated place on the [same drive](https://drive.google.com/drive/folders/1OgSYpEttJQSREDNMQVNPdaOmjBM9xMXC).
 
 NOTE : As the frequency was not provided for the test clips, it was assumed to be 30Hz.
 
