@@ -68,7 +68,7 @@
 <!-- PROJECT OBJECTIVES AND CONTRIBUTION -->
 ## Project Objectives and Contribution
 
-The aim of this project is to replicate the results from the reference paper, by [Mathew & Khalid](https://arxiv.org/pdf/2212.05432.pdf). That is, we want to extract the ego speed of a vehicle given a certain number of frames before and after the frame of interest : 
+The aim of this project is to replicate the results from the reference paper, by [Mathew & Khalid](https://arxiv.org/pdf/2212.05432.pdf), a short [YouTube video](https://youtu.be/cwzNnWCSZe0) overviews the main contributions of this project. That is, we want to extract the ego speed of a vehicle given a certain number of frames before and after the frame of interest : 
 
 <img src="Figures\Objective.png" alt="Objective">
 
