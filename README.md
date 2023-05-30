@@ -139,7 +139,7 @@ The results of training are summarized in the following figure :
 
 <img src="Figures\TrainResults.png" alt="TrainResults">
 
-As we can see we have much more satisfying results on the NuImage dataset, with the test loss on the KITTI dataset remaining very high. The training for the NuImage network happened using the preprocessed dataset and took about 10 hours using cuda on a NVIDIA GeForce RTX 3050 Ti Laptop GPU. 
+As we can see we have much more satisfying results on the NuImage dataset, with the test loss on the KITTI dataset remaining very high. The training for the NuImage network happened using the preprocessed dataset and took about 10 hours using cuda on a NVIDIA GeForce RTX 3050 Ti Laptop GPU. The trained weights for each network are available [here](https://drive.google.com/drive/folders/1U_DB388k41wZYvP8C2IXk6FzKInPLSbG?usp=sharing).
 
 The RMSE loss computed on the whole test dataset is 1.02, which is actually slightly less than the one given in the paper. The `Evaluate_NN.py` script implements this computation if it is run with its `animate` flag set to `False`. Furthermore, this script provides a `evaluate()` function which takes an RGB clip of any size, as well as both networks required for a forward pass, and outputs the estimated velocity. For clips extracted from NuImage, the evaluation function takes ~0.4 seconds to run. Despite this, the network would not be able to perform in true real-time, as it requires frames from a time window in the past as well as in the futur to make a prediction.
 
@@ -156,7 +156,7 @@ NOTE : As the frequency was not provided for the test clips, it was assumed to b
 <!-- CONCLUSION -->
 ## Conclusion
 
-To conclude, this project has tought us many aspects of scientific research. From the initial ideas to the final implementation, most of the information we need must be found by ourselves in scientific litterature, as we are working on a very specific problem that not any data scientist would have intuitive solutions to give to us. This project has also highlighted the huge part that datasets play in depp learning, and the time and effort that comes with simply handling them in a clear and efficient way : in our case, dataset extraction and preprocessing actually took more time than network design and training. Overall, it was a very enriching learning experience as it has also made us more confortable with a deep learning library as popular as PyTorch.
+To conclude, this project has tought us many aspects of scientific research. From the initial ideas to the final implementation, most of the information we need must be found by ourselves in scientific litterature, as we are working on a very specific problem that not any data scientist would have intuitive solutions to give to us. This project has also highlighted the huge part that datasets play in deep learning, and the time and effort that comes with simply handling them in a clear and efficient way : in our case, dataset extraction and preprocessing actually took more time than network design and training. Overall, it was a very enriching learning experience as it has also made us more confortable with a deep learning library as popular as PyTorch.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
